@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+:root {
+  --primaryColor: #ffdf00;
+  --SecondaryColor: #641a89;
+  --BgColor: #031a30;
+  --formColor: rgb(2, 15, 29);
+  --projectCardColor: #072340;
+  --textColor: #dae4fb;
+  --headerHeight: 3rem;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--primaryColor);
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+}
+
+#navbar {
+  background: var(--primaryColor);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-inline: 5vw;
+  padding-block-start: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.social-media-banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-inline: auto;
+  max-width: 1200px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--SecondaryColor);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.social-media-logos {
+  & > svg {
+    fill: var(--SecondaryColor);
+    width: 32px;
+    height: 16px;
+    gap: 10px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.nav-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+  width: 100%;
+  margin-inline: auto;
+  max-width: 1200px;
+}
+
+.banner-titles {
+  display: flex;
+  font-size: 14px;
+  gap: 52px;
+  & > h3 {
+    color: var(--SecondaryColor);
   }
+}
+
+#hero {
+  background: var(--primaryColor);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.AC {
+      display: flex;
+    align-items: flex-end;
+    gap: 14%;
+    width: 41%;
+    justify-content: flex-end;
+}
+.hero-banner {
+  display: flex;
+  width: 80vw;
+  margin-inline: auto;
+  justify-content: space-between;
+  max-width: 1100px;
+}
+.hero-banner-text {
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 84px;
+    align-content: flex-end;
+  &>h2{
+       font-weight: 500;
+    font-size: 28px;
+  }
+}
+.hero-banner-logo {
+  &>img{
+        position: relative;
+    margin-right: -69px;
+    margin-top: -52px;
+  }
+}
+
+.hero-lower{
+&>h1{
+
+}
+}
+.lower-wrapper{
+
+}
+.lower-wrapper-image{
+
+}
+.lower-wrapper-text{
+&>div{
+  &>span{
+
+  }
+  &>p{
+    
+  }
+}
 }
