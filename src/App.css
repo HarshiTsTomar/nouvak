@@ -32,6 +32,7 @@ body {
   background-color: #ffffff;
 }
 
+/* =============================  Navbar ========================= */
 #navbar {
   background: var(--primaryColor);
   display: flex;
@@ -80,6 +81,8 @@ body {
   }
 }
 
+/* =============================  Hero ========================= */
+
 #hero {
   background: var(--primaryColor);
   display: flex;
@@ -87,11 +90,11 @@ body {
   flex-direction: column;
 }
 .AC {
-      display: flex;
-    align-items: flex-end;
-    gap: 14%;
-    width: 41%;
-    justify-content: flex-end;
+  display: flex;
+  align-items: flex-end;
+  gap: 14%;
+  width: 41%;
+  justify-content: flex-end;
 }
 .hero-banner {
   display: flex;
@@ -101,42 +104,128 @@ body {
   max-width: 1100px;
 }
 .hero-banner-text {
-      display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 84px;
-    align-content: flex-end;
-  &>h2{
-       font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 84px;
+  align-content: flex-end;
+  & > h2 {
+    font-weight: 500;
     font-size: 28px;
   }
 }
 .hero-banner-logo {
-  &>img{
-        position: relative;
+  & > img {
+    position: relative;
     margin-right: -69px;
     margin-top: -52px;
+    margin-bottom: -7px;
   }
 }
 
-.hero-lower{
-&>h1{
+.hero-lower {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 6rem 2rem 0 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-inline: auto;
 
-}
-}
-.lower-wrapper{
-
-}
-.lower-wrapper-image{
-
-}
-.lower-wrapper-text{
-&>div{
-  &>span{
-
+  & > h1 {
+    text-align: center;
+    font-size: 30px;
   }
-  &>p{
+}
+.lower-wrapper {
+  display: flex;
+  gap: 60px;
+  margin-top: 60px;
+}
+.lower-wrapper-image {
+  margin-bottom: -20px;
+}
+.lower-wrapper-text {
+  & > div {
+    & > span {
+      font-size: 24px;
+      color: #03111fd9;
+      line-height: 80px;
+    }
+    & > p {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+/* =============================  Services ========================= */
+
+.services {
+  display: flex;
+  background: var(--primaryColor);
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 6rem;
+}
+.services-text {
+  & > h2 {
+    font-size: 36px;
+  }
+  & > p {
+    font-size: 16px;
+  }
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+   
+    & > span {
+      line-height: 60px;
+    }
+  }
+}
+
+/* =============================  MobileApp ========================= */
+
+.MobileApp{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 2rem;
+    gap: 4rem;
+}
+.mobile-header{
     
-  }
 }
+.mobile-heading{
+font-size: 50px;
+    font-weight: 500;
+}
+.mobile-form{
+display: flex;
+align-items: center;
+gap: 2.5rem;
+padding: 4rem 0;
+&>button{
+  
+}
+}
+.mobile-image{
+
 }
